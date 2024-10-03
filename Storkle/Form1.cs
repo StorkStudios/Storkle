@@ -81,7 +81,7 @@ namespace Storkle
                 dataGridView1.Rows.Add(storkleData.GetData()[selection]);
                 dataGridView1.Rows[dataGridView1.Rows.Count - 1].Height = smallImageSize;
                 dataGridView1[0, dataGridView1.Rows.Count - 1].Value = new Bitmap(storkleData.GetPictures()[selection], new Size(smallImageSize, smallImageSize));
-                for (int i = 1; i < storkleData.GetHeaders().Length; i++)
+                for (int i = 2; i < storkleData.GetHeaders().Length; i++)
                 {
                     if (storkleData.GetData()[selection][i] == storkleData.GetData()[hero][i])
                     {
